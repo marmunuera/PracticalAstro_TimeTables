@@ -1,7 +1,7 @@
 # PracticalAstro_TimeTables
 This repository can be used to download and read the time conversion tables for Assignment 1 of Practical Astrodynamics
 
-It should be noted that this code only returns the data from the tables but does not show how to search for this data and how to use it.
+It should be noted that this code only returns the data from the correction tables but does not show how to search for this data and how to use it.
 
 
 ## How to use the code:
