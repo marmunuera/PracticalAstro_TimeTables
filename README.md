@@ -1,5 +1,5 @@
 # PracticalAstro_TimeTables
-This repository can be used to download and read the time conversion tables for Assignment 1 of Practical Astrodynamics
+This repository has been done by Mar Munuera and can be used to download and read the time conversion tables for Assignment 1 of Practical Astrodynamics
 
 It should be noted that this code only returns the data from the correction tables but does not show how to search for this data and how to use it.
 
@@ -39,6 +39,7 @@ This would be the output obtained in the console:
 - get_TAI_UTC(): 
     - This function reads the file "leapSecondsTable.txt"
     - It returns the lists with floats: MJD (containing the Modified Julian Dates) and TAI_UTC_1, TAI_UTC_2,TAI_UTC_3 (containing the corrections). 
+
 
 
 
