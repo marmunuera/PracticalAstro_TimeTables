@@ -2,26 +2,11 @@
 import os
 from io import StringIO
 import numpy as np
-# import matplotlib
-# matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
-import pandas as pd
-import sgp4 as s4
-from sgp4 import omm
-from sgp4.api import Satrec
-from sgp4.io import twoline2rv
-from sgp4.api import jday
-import datetime
-import math
-from math import trunc
 import requests
 import shutil
 import sys
 import getopt
-from sgp4.api import WGS72OLD, WGS72, WGS84
-import configparser
-from mpl_toolkits.basemap import Basemap
-import pandas as pd
+
 
 
 # functions to download the tables
@@ -42,16 +27,16 @@ def get_table_correction_GPS(): # this function saves the most recent leap secon
 
 def check_for_Tables():
     file_finals = os.path.exists("finals.daily.txt")
-        if not file_finals:
-            print("File finals.daily.txt does not exist, it has to be downloaded")
-            get_table_correction_UT1()
-            print("File downloaded!")
+    if not file_finals:
+        print("File finals.daily.txt does not exist, it has to be downloaded")
+        get_table_correction_UT1()
+        print("File downloaded!")
 
     file_leapSec = os.path.exists("leapSecondsTable.txt")
-        if not file_finals:
-            print("File leapSecondsTable.txt does not exist, it has to be downloaded")
-            get_table_correction_GPS()
-            print("File downloaded !")
+    if not file_finals:
+        print("File leapSecondsTable.txt does not exist, it has to be downloaded")
+        get_table_correction_GPS()
+        print("File downloaded !")
 
     print("All necessary tables are present in your directory.")
     return 0
@@ -72,8 +57,8 @@ def get_DUT1(): # get lists with MDJ and DUT1=UT1-UTC from the tables (UTC_to_UT
     DUT1 = [0]*len(data)
 
     for i in range(len(data)):
-        MJD_table = float(data[i][7:14])
-        DUT1=float(data[i][58:67])
+        MJD[i]= float(data[i][7:14])
+        DUT1[i]=float(data[i][58:67])
 
     return MJD, DUT1
 

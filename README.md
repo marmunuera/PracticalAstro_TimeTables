@@ -16,6 +16,8 @@ This code can be used from CLI commands, and does not require any inputs, as it 
 python main.py
 ```
 
+![fig1](test.png)
+
 ## Functions and their outputs
 
 - get_table_correction_UT1(): 
