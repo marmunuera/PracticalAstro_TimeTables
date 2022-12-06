@@ -34,11 +34,11 @@ This would be the output obtained in the console:
 
 - get_DUT1(): 
     - This function reads the file "finals.daily.txt"
-    - It returns the lists with floats: MJD (containing the Modified Julian Dates), DUT1 (containing the correction)
+    - It returns the lists with floats: MJD (containing the Modified Julian Dates), DUT1 (containing the correction). 
 
 - get_TAI_UTC(): 
     - This function reads the file "leapSecondsTable.txt"
-    - It returns the lists with floats: MJD (containing the Modified Julian Dates) and TAI_UTC_1, TAI_UTC_2,TAI_UTC_3 (containing the corrections)
+    - It returns the lists with floats: MJD (containing the Modified Julian Dates) and TAI_UTC_1, TAI_UTC_2,TAI_UTC_3 (containing the corrections). 
 
 
 
