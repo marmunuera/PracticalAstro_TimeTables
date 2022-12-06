@@ -15,6 +15,7 @@ This code can be used from CLI commands, and does not require any inputs, as it 
 ```
 python main.py
 ```
+This would be the output obtained in the console:
 
 ![fig1](test.png)
 
